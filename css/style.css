@@ -51,20 +51,23 @@ h1, p {
 
 .card {
     display: flex;
-    color: white;
+    color: blue;
     background-color: black;
     margin: var(--gutter);
+    padding-right: 5px;
+    /* width: 100%; */
+    /* height: 100%; */
 }
 
 .card-photo {
-    max-width: 30%;
+    width: 30%;
     height: 100%;
 }
 
 .card-photo > img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .card-info {
@@ -74,11 +77,12 @@ h1, p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 14px;
 }
 
 .card-name {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -94,14 +98,18 @@ h1, p {
 
 
 /* MEDIA QUERY */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 830px) {
     #card-list > li {
         max-width: calc(100% / 2);
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 560px) {
     #card-list > li {
         max-width: 100%;
+    }
+
+    .card-photo {
+        max-width: 35%;
     }
 }
