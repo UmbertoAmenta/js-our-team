@@ -35,19 +35,20 @@
         
         <div>
             <h1>Enter our team</h1>
-            <form class="add-card-form">
+            <form id="add-card-form">
                 <div class="add-card">
                     <div class="form-image">
-                        <label for="image">Immagine-profilo</label>
-                        <input id="image" type="file" accept=".jpg">
+                        <label for="img">Immagine-profilo</label>
+                        <!-- <input id="img" type="file" accept=".jpeg" required> -->
+                         <input id="img" type="text" required>
                     </div>
                     <div class="form-info">
                         <label for="name">Nome e Cognome</label>
-                        <input id="name" type="text">
+                        <input id="name" type="text" required>
                         <label for="role">Ruolo</label>
-                        <input id="role" type="text">
+                        <input id="role" type="text" required>
                         <label for="email">Indirizzo</label>
-                        <input id="email" type="email">
+                        <input id="email" type="email" required>
                     </div>
                 </div>
                 <div class="submit">
